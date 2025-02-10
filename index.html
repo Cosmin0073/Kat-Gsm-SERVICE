@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAT GSM SERVICE</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+#acasa {
+    background: rgba(255, 255, 255, 0.8); /* Alb semi-transparent */
+    color: black; /* Text negru */
+    padding: 40px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    margin: 20px auto;
+    max-width: 800px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+#acasa h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    color: black; /* Asigură că titlul este negru */
+}
+
+#acasa p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: black; /* Text negru */
+}
+
+#acasa .whatsapp-button {
+    display: inline-block;
+    background-color: transparent;
+    color: black; /* Text negru */
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+#acasa .whatsapp-button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Efectul de aurora -->
+    <div class="aurora">
+        <div class="aurora__item"></div>
+        <div class="aurora__item"></div>
+        <div class="aurora__item"></div>
+        <div class="aurora__item"></div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <img src="img/logo.png" alt="Kat Gsm SERVICE Logo">
+        <h1>Kat Gsm SERVICE</h1>
+        <p>Reparații profesionale pentru telefoane mobile</p>
+    </header>
+
+    <!-- Navigație -->
+    <nav>
+        <a href="#acasa">Acasă</a>
+        <a href="#servicii">Servicii</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Secțiunea Acasă -->
+    <section id="acasa">
+        <h2>Bine ați venit!</h2>
+        <p>Oferim servicii de reparații pentru telefoane mobile. Contactați-ne pentru mai multe detalii.</p>
+        <a href="https://wa.me/40751414486" class="whatsapp-button">0751 414 486</a>
+    </section>
+
+    <!-- Secțiunea Servicii -->
+    <section id="servicii">
+        <h2>Servicii Oferite</h2>
+        <a href="reparatie-display.html" class="service-button">Reparație Display</a>
+        <a href="reparatie-capac.html" class="service-button">Reparație Capac</a>
+        <a href="reparatie-carcasa.html" class="service-button">Reparație Carcasă</a>
+        <a href="reparatie-difuzor-casca.html" class="service-button">Reparație Difuzor & Cască</a>
+        <a href="reparatie-baterie.html" class="service-button">Reparație Baterie</a>
+        <a href="reparatie-camera.html" class="service-button">Reparație Cameră</a>
+    </section>
+
+    <!-- Secțiunea Contact -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>WhatsApp: <a href="https://wa.me/40751414486" class="whatsapp-button">0751 414 486</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Kat Gsm SERVICE</p>
+    </footer>
+
+    <!-- Scripturi -->
+    <script src="script.js"></script>
+</body>
+</html>

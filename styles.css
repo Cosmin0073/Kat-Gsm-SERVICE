@@ -1,0 +1,409 @@
+/* Resetare stiluri implicite */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Stiluri generale */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff; /* Fundal alb */
+    color: #000000; /* Text negru */
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('img/background-pattern.png'); /* Fundal subtil */
+    background-repeat: repeat;
+    background-size: 200px; /* Dimensiunea modelului */
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.6)); /* Gradient alb semi-transparent */
+    color: #000000; /* Text negru */
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Umbra subtilă */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Logo */
+header img {
+    max-width: 150px; /* Ajustează dimensiunea logo-ului */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Navigație */
+nav {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.6)); /* Gradient alb semi-transparent */
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Umbra subtilă */
+}
+
+nav a {
+    color: #000000; /* Text negru */
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #25D366; /* Culoare WhatsApp la hover */
+}
+
+/* Secțiuni */
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+    background-color: #ffffff; /* Fundal alb pentru secțiuni */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Umbra subtilă */
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #000000; /* Text negru */
+    position: relative;
+}
+
+section h2::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 2px;
+    background-color: #000000; /* Linie decorativă */
+}
+
+section h2::after {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 2px;
+    background-color: #000000; /* Linie decorativă */
+}
+
+section p {
+    font-size: 1.1rem;
+    color: #333333; /* Text gri închis */
+}
+
+/* Butoane servicii */
+.service-button {
+    display: inline-block;
+    background-color: transparent; /* Fundal transparent */
+    color: #000000; /* Text negru */
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 2px solid #000000; /* Bordură neagră */
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.service-button:hover,
+.service-button:active {
+    background-color: rgba(0, 0, 0, 0.1); /* Fundal semi-transparent la hover/apăsare */
+    color: #000000; /* Text negru */
+    transform: translateY(-2px); /* Efect de ridicare */
+}
+
+/* Buton WhatsApp */
+.whatsapp-button {
+    display: inline-block;
+    background-color: #25D366; /* Verde WhatsApp */
+    color: #ffffff; /* Text alb */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E; /* Verde WhatsApp mai închis la hover */
+    transform: translateY(-2px); /* Efect de ridicare */
+}
+
+/* Footer */
+footer {
+    background: rgba(255, 255, 255, 0.8);
+    color: #000000;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Stiluri pentru pagina de serviciu */
+#serviciu {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.serviciu-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.serviciu-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.serviciu-detalii {
+    text-align: left;
+    width: 100%;
+}
+
+.serviciu-detalii h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.serviciu-detalii ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.serviciu-detalii ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+/* Efect Aurora ca fundal */
+.aurora {
+    position: fixed; /* Folosim "fixed" pentru a acoperi întreaga pagină */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Asigură-te că fundalul este în spatele conținutului */
+}
+
+.aurora__item {
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1), transparent);
+    animation: auroraAnimation 10s infinite linear;
+}
+
+.aurora__item:nth-child(1) {
+    top: -50%;
+    left: -50%;
+    background: radial-gradient(circle, rgba(0, 0, 255, 0.5), transparent); /* Albastru mai vizibil */
+    animation-duration: 8s;
+}
+
+.aurora__item:nth-child(2) {
+    top: -50%;
+    left: 0;
+    background: radial-gradient(circle, rgba(0, 255, 0, 0.1), transparent);
+    animation-duration: 12s;
+}
+
+.aurora__item:nth-child(3) {
+    top: 0;
+    left: -50%;
+    background: radial-gradient(circle, rgba(0, 0, 255, 0.1), transparent);
+    animation-duration: 10s;
+}
+
+.aurora__item:nth-child(4) {
+    top: 0;
+    left: 0;
+    background: radial-gradient(circle, rgba(255, 255, 0, 0.1), transparent);
+    animation-duration: 14s;
+}
+
+@keyframes auroraAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* ... restul codului tău existent ... */
+
+/* Stiluri pentru secțiunea de servicii */
+#servicii {
+    background: rgba(255, 255, 255, 0.8); /* Fundal alb semi-transparent */
+    color: black; /* Text negru */
+    padding: 40px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    margin: 20px auto;
+    max-width: 800px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+#servicii h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    color: black; /* Titlul este acum negru */
+}
+
+#servicii .service-button {
+    display: inline-block;
+    background-color: transparent; /* Fundal transparent */
+    color: black; /* Text negru */
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 2px solid black; /* Bordură neagră */
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+#servicii .service-button:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Fundal gri deschis la hover */
+    transform: translateY(-2px);
+}
+
+#servicii {
+    background: rgba(255, 255, 255, 0.8); /* Alb semi-transparent */
+    color: black; /* Text negru pentru contrast */
+    padding: 40px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Umbra pronunțată */
+    margin: 20px auto;
+    max-width: 800px;
+    animation: fadeIn 1.5s ease-in-out; /* Animatie de fade-in */
+}
+
+
+/* Contact */
+#contact {
+    background: rgba(255, 255, 255, 0.8);
+    color: black; /* Text negru */
+    padding: 40px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    margin: 20px auto;
+    max-width: 800px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+#contact .whatsapp-button {
+    display: inline-block;
+    background-color: transparent;
+    color: black; /* Text negru */
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+#contact .whatsapp-button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+/* Stiluri pentru secțiunea "Bine ați venit!" */
+#welcome-section {
+    background: rgba(255, 255, 255, 0.8);
+    color: black; /* Text negru */
+    padding: 40px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    margin: 20px auto;
+    max-width: 800px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+#welcome-section h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+#welcome-section p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+#welcome-section .contact-info {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black; /* Asigură că numărul de telefon este negru */
+}
+
+#welcome-section .contact-button {
+    display: inline-block;
+    background-color: transparent;
+    color: black; /* Text negru */
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+#welcome-section .contact-button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
